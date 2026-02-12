@@ -6,4 +6,4 @@ app = FastAPI()
 @app.get("/")
 def root():
     env_name = os.getenv("ENV_NAME", "local")
-    return {"message": f"Running in {env_name}"}
+    return {"message to testing docker ": f"Running in {env_name}"}

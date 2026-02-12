@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    image: akshu0403/sample-docker:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV_NAME=production
+    restart: always
