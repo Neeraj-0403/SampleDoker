@@ -4,4 +4,5 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "CI/CD Working from Windows"}
+    env_name = os.getenv("ENV_NAME", "local")
+    return {"message": f"Running in {env_name}"}
